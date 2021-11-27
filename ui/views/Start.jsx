@@ -222,84 +222,28 @@ export default function Start({newRoom = {}, urlRoomId, roomFromURIError}) {
 
         <hr className="mt-14 mb-14" />
 
-        <h1>Welcome to Jam</h1>
+        <h1>Welcome to VOICE</h1>
 
         <div className="flex flex-row pt-4 pb-4">
           <div className="flex-1 text-gray-600 pt-6">
-            Jam is an <span className="italic">audio&nbsp;space</span>
+            Where fans around the world
             <br />
-            for chatting, brainstorming, debating, jamming,
-            <br />
-            micro-conferences and more.
+            talk and discuss sport news
             <br />
             <br />
-            <a
-              href="https://gitlab.com/jam-systems/jam"
-              className="underline text-blue-800 active:text-blue-600"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Learn&nbsp;more&nbsp;about&nbsp;Jam.
-            </a>
-            <br />
-            <br />
-            <br />
-            Jam <b className="font-semibold">Pro</b> (Early Access): Make Jam
-            your own.
-            <br />
-            Set your own colors and logo, use your own domain.
-            <br />
-            <br />
-            <a
-              href="https://pro.jam.systems"
-              className="underline text-blue-800 active:text-blue-600"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Sign up for the Jam Pro Early Access Program.
-            </a>
+            
           </div>
           <div className="flex-initial">
             <img
               className="mt-8 md:mt-4 md:mb-4 md:mr-8"
-              style={{width: 130, height: 130}}
-              alt="Jam mascot by @eejitlikeme"
-              title="Jam mascot by @eejitlikeme"
-              src="/img/jam.jpg"
+              style={{width: 140, height: 41}}
+              alt="Voice"
+              title="Voice"
+              src="/img/voice.jpg"
             />
           </div>
         </div>
 
-        <div className="pt-32 text-xs text-gray-400 text-center">
-          <a
-            href="https://gitlab.com/jam-systems/jam"
-            target="_blank"
-            rel="noreferrer"
-          >
-            built
-          </a>{' '}
-          w/ ♥ by{' '}
-          {humins.map((humin, idx) => (
-            <span key={idx}>
-              {' '}
-              <a
-                href={'https://twitter.com/' + humin}
-                target="_blank"
-                rel="noreferrer"
-              >
-                @{humin}
-              </a>
-            </span>
-          ))}{' '}
-          in Berlin &amp; Vienna,{' '}
-          <a
-            href="https://www.digitalocean.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            hosted in Frankfurt
-          </a>
-        </div>
       </div>
     </Container>
   );
