@@ -12,11 +12,7 @@ export default function RoomHeader({
   buttonText,
   editRoom,
 }) {
-  let [isRecording, isPodcasting] = useJamState([
-    'isSomeoneRecording',
-    'isSomeonePodcasting',
-  ]);
-  isRecording = isRecording || isPodcasting;
+  let isRecording = useJamState('isSomeoneRecording');
   return (
     <div className="flex room-header">
       {logoURI && (

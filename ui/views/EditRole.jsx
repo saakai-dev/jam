@@ -110,36 +110,15 @@ export default function EditRole({
 }
 
 export function EditSelf({onCancel}) {
-  const [
-    state,
-    {
-      leaveStage,
-      addSpeaker,
-      removeSpeaker,
-      startRecording,
-      stopRecording,
-      downloadRecording,
-      startPodcastRecording,
-      stopPodcastRecording,
-    },
-  ] = useJam();
+  const [state, {leaveStage, addSpeaker, removeSpeaker, startRecording, stopRecording, downloadRecording}] = useJam();
   let mqp = useMqParser();
-  let [
-    iSpeak,
-    iModerate,
-    room,
-    myId,
-    roomId,
-    isRecording,
-    isPodcasting,
-  ] = use(state, [
+  let [iSpeak, iModerate, room, myId, roomId, isRecording] = use(state, [
     'iAmSpeaker',
     'iAmModerator',
     'room',
     'myId',
     'roomId',
-    'isRecording',
-    'isPodcasting',
+    'isRecording'
   ]);
   let stageOnly = !!room?.stageOnly;
   iSpeak = stageOnly || iSpeak;
@@ -204,23 +183,7 @@ export function EditSelf({onCancel}) {
               onCancel();
             }}
           >
-            {isRecording ? 'Stop Room Recording' : 'Start Room Recording'}
-          </SecondaryButton>
-        )}
-        {iModerate && (
-          <SecondaryButton
-            onClick={() => {
-              if (isPodcasting) {
-                stopPodcastRecording();
-              } else {
-                startPodcastRecording();
-              }
-              onCancel();
-            }}
-          >
-            {isPodcasting
-              ? 'Stop Podcast Recording'
-              : 'Start Podcast Recording'}
+            {isRecording ? "Stop Room Recording" : "Start Room Recording"}
           </SecondaryButton>
         )}
         <SecondaryButton light onClick={onCancel}>

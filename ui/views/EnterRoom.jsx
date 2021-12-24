@@ -26,7 +26,19 @@ export default function EnterRoom({
   let otherDevice = use(state, 'otherDeviceInRoom');
   return (
     <Container>
-      <div className={mqp('p-2 pt-60 md:p-10 md:pt-60')}>
+      <div className={mqp('p-2 pt-60 md:p-10 md:pt-60')} style{{paddingTop: 1rem}}>
+
+      <div className="flex-initial">
+            <img
+              className="mt-8 md:mt-4 md:mb-4 md:mr-8"
+              style={{width: 210, height: 83}}
+              alt="Voice"
+              title="Voice"
+              src="/img/voice.png"/>
+      </div>
+	<br />
+        <br />
+
         <RoomHeader {...{name, description, logoURI, buttonURI, buttonText}} />
         {/*
             optional (for future events:)

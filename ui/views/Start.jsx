@@ -224,6 +224,15 @@ export default function Start({newRoom = {}, urlRoomId, roomFromURIError}) {
 
         <h1>Welcome to VOICE</h1>
 
+        <div className="flex-initial">
+            <img
+              className="mt-8 md:mt-4 md:mb-4 md:mr-8"
+              style={{width: 210, height: 83}}
+              alt="Voice"
+              title="Voice"
+              src="/img/voice.png"/>
+        </div>
+
         <div className="flex flex-row pt-4 pb-4">
           <div className="flex-1 text-gray-600 pt-6">
             Where fans around the world
@@ -233,15 +242,7 @@ export default function Start({newRoom = {}, urlRoomId, roomFromURIError}) {
             <br />
             
           </div>
-          <div className="flex-initial">
-            <img
-              className="mt-8 md:mt-4 md:mb-4 md:mr-8"
-              style={{width: 140, height: 41}}
-              alt="Voice"
-              title="Voice"
-              src="/img/voice.jpg"
-            />
-          </div>
+
         </div>
 
       </div>

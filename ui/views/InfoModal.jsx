@@ -6,11 +6,11 @@ export function InfoModal({roomId, room, close}) {
     <Modal close={close}>
       <div className="flex flex-row pt-4 pb-4">
         <div className="flex-1 text-gray-600 pt-6">
-          Jam is an <span className="italic">audio&nbsp;space</span>
+          Voice is an <span className="italic">audio&nbsp;space</span>
           <br />
-          for chatting, brainstorming, debating, jamming,
+          platform for chatting and debating
           <br />
-          micro-conferences and more.
+          sports news.
           <br />
           <br />
           <a
@@ -24,28 +24,28 @@ export function InfoModal({roomId, room, close}) {
           <br />
           <br />
           <br />
-          Jam <b className="font-semibold">Pro</b> (Early Access): Make Jam your
+          Jam <b className="font-semibold">Pro</b> (Early Access): Make Voice your
           own.
           <br />
-          Set your own colors and logo, use your own domain.
+          Set your own colors and logo, embed in your website.
           <br />
           <br />
           <a
-            href="https://pro.jam.systems"
-            className="underline text-blue-800 active:text-blue-600"
+            href="https://voice.spoorts.io"
+            className="underline text-blue-800 active:text-red-600"
             target="_blank"
             rel="noreferrer"
           >
-            Sign up for the Jam Pro Early Access Program.
+            Check SPOORTS to find more rooms.
           </a>
         </div>
         <div className="flex-initial">
           <img
             className="mt-8 md:mt-4 md:mb-4 md:mr-8"
-            style={{width: 130, height: 130}}
-            alt="Jam mascot by @eejitlikeme"
-            title="Jam mascot by @eejitlikeme"
-            src="/img/jam.jpg"
+            style={{width: 210, height: 83}}
+            alt="Voice"
+            title=""
+            src="/img/voice.png"
           />
         </div>
       </div>
